@@ -1,24 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sza-qo-JcU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Game 2-->
+        <scene sceneID="uE7-k8-wfi">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="BdL-dU-nyD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RaP-4H-wf5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="t5a-fn-h7S"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Game 2" image="drop" catalog="system" selectedImage="drop.fill" id="OEH-ej-Ons"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VaZ-s3-S3g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="28" y="331"/>
+        </scene>
+        <!--RPS-->
+        <scene sceneID="tzT-RH-hBz">
+            <objects>
+                <viewController id="50r-lB-Zd0" customClass="RPSViewController" customModule="SimpleGames" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G3F-1t-utz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="YBP-DB-mXw">
+                                <rect key="frame" x="100" y="144" width="214" height="569"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sX6-1W-Hfw">
+                                        <rect key="frame" x="0.0" y="0.0" width="214" height="156.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Камень"/>
+                                        <connections>
+                                            <action selector="onRockClick" destination="50r-lB-Zd0" eventType="touchUpInside" id="Pgf-Lr-Way"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMT-gk-vTZ">
+                                        <rect key="frame" x="0.0" y="206.5" width="214" height="156"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Ножницы"/>
+                                        <connections>
+                                            <action selector="onScissorsClick" destination="50r-lB-Zd0" eventType="touchUpInside" id="nLI-ff-Mn6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHy-yF-nq1">
+                                        <rect key="frame" x="0.0" y="412.5" width="214" height="156.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Бумага"/>
+                                        <connections>
+                                            <action selector="onPapperClick" destination="50r-lB-Zd0" eventType="touchUpInside" id="irJ-6O-0Eb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cB0-Ay-2Bn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cB0-Ay-2Bn" firstAttribute="bottom" secondItem="YBP-DB-mXw" secondAttribute="bottom" constant="100" id="a1u-Xo-o8E"/>
+                            <constraint firstItem="YBP-DB-mXw" firstAttribute="leading" secondItem="cB0-Ay-2Bn" secondAttribute="leading" constant="100" id="anp-oV-uhT"/>
+                            <constraint firstItem="cB0-Ay-2Bn" firstAttribute="trailing" secondItem="YBP-DB-mXw" secondAttribute="trailing" constant="100" id="nMe-yM-kIJ"/>
+                            <constraint firstItem="YBP-DB-mXw" firstAttribute="top" secondItem="cB0-Ay-2Bn" secondAttribute="top" constant="100" id="pRq-bJ-VFg"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="RPS" image="flame" catalog="system" selectedImage="flame.fill" id="9jg-t5-xKj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NvW-7z-UxY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="27.536231884057973" y="-276.5625"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="IDn-Zu-khn">
+            <objects>
+                <tabBarController id="sza-qo-JcU" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vUT-qv-f3T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="50r-lB-Zd0" kind="relationship" relationship="viewControllers" id="niI-4J-7l3"/>
+                        <segue destination="BdL-dU-nyD" kind="relationship" relationship="viewControllers" id="YLG-sU-Zmr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BPu-hb-zrE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-862" y="28"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="drop" catalog="system" width="101" height="128"/>
+        <image name="drop.fill" catalog="system" width="101" height="128"/>
+        <image name="flame" catalog="system" width="108" height="128"/>
+        <image name="flame.fill" catalog="system" width="108" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

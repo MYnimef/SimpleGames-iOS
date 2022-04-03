@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54112ED227FA0EF200222E1F /* RPSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54112ED127FA0EF200222E1F /* RPSViewController.swift */; };
+		54112ED427FA1EF000222E1F /* RPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54112ED327FA1EF000222E1F /* RPS.swift */; };
+		54112ED627FA1F1E00222E1F /* GameResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54112ED527FA1F1E00222E1F /* GameResult.swift */; };
 		549928E427F38BE5007048AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549928E327F38BE5007048AD /* AppDelegate.swift */; };
 		549928E627F38BE5007048AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549928E527F38BE5007048AD /* SceneDelegate.swift */; };
-		549928E827F38BE5007048AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549928E727F38BE5007048AD /* ViewController.swift */; };
 		549928EB27F38BE5007048AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 549928E927F38BE5007048AD /* Main.storyboard */; };
 		549928ED27F38BE6007048AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 549928EC27F38BE6007048AD /* Assets.xcassets */; };
 		549928F027F38BE6007048AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 549928EE27F38BE6007048AD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54112ED127FA0EF200222E1F /* RPSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPSViewController.swift; sourceTree = "<group>"; };
+		54112ED327FA1EF000222E1F /* RPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPS.swift; sourceTree = "<group>"; };
+		54112ED527FA1F1E00222E1F /* GameResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResult.swift; sourceTree = "<group>"; };
 		549928E027F38BE5007048AD /* SimpleGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		549928E327F38BE5007048AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		549928E527F38BE5007048AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		549928E727F38BE5007048AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		549928EA27F38BE5007048AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		549928EC27F38BE6007048AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		549928EF27F38BE6007048AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,11 +62,13 @@
 			children = (
 				549928E327F38BE5007048AD /* AppDelegate.swift */,
 				549928E527F38BE5007048AD /* SceneDelegate.swift */,
-				549928E727F38BE5007048AD /* ViewController.swift */,
 				549928E927F38BE5007048AD /* Main.storyboard */,
 				549928EC27F38BE6007048AD /* Assets.xcassets */,
 				549928EE27F38BE6007048AD /* LaunchScreen.storyboard */,
 				549928F127F38BE6007048AD /* Info.plist */,
+				54112ED127FA0EF200222E1F /* RPSViewController.swift */,
+				54112ED327FA1EF000222E1F /* RPS.swift */,
+				54112ED527FA1F1E00222E1F /* GameResult.swift */,
 			);
 			path = SimpleGames;
 			sourceTree = "<group>";
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				549928E827F38BE5007048AD /* ViewController.swift in Sources */,
 				549928E427F38BE5007048AD /* AppDelegate.swift in Sources */,
+				54112ED427FA1EF000222E1F /* RPS.swift in Sources */,
+				54112ED227FA0EF200222E1F /* RPSViewController.swift in Sources */,
 				549928E627F38BE5007048AD /* SceneDelegate.swift in Sources */,
+				54112ED627FA1F1E00222E1F /* GameResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
