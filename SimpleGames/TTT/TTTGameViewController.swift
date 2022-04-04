@@ -20,7 +20,6 @@ final class TTTGameViewController: UIViewController {
     @IBOutlet weak var button8: UIButton!
     @IBOutlet weak var button9: UIButton!
     
-    var buttons: [UIButton]?
     var model: TTTModel!
     
     func setPlayerItem(item: TTT) {
@@ -30,7 +29,7 @@ final class TTTGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        buttons = [
+        let buttons: [UIButton] = [
             button1,
             button2,
             button3,
@@ -42,7 +41,27 @@ final class TTTGameViewController: UIViewController {
             button9
         ]
         
-        model.setFillCell(fillCell: fillButton)
+        model.setActions(
+            fillCell: { num, content in
+                buttons[num].setTitle(content, for: .normal)
+            },
+            showResult: { content in
+                let alert = UIAlertController(
+                    title: "Игра закончена",
+                    message: content,
+                    preferredStyle: .alert
+                )
+                let action = UIAlertAction(
+                    title: "Новая игра",
+                    style: .default,
+                    handler: { action in
+                        self.dismiss(animated: true, completion: nil)
+                    }
+                )
+                alert.addAction(action)
+                self.present(alert, animated: true)
+            }
+        )
     }
 
     @IBAction func clickButton1() {
@@ -81,9 +100,5 @@ final class TTTGameViewController: UIViewController {
     
     @IBAction func clickButton9() {
         model.playerClicked(cellNum: 8)
-    }
-    
-    func fillButton(buttonNum: Int, content: String) {
-        buttons?[buttonNum].setTitle(content, for: .normal)
     }
 }
