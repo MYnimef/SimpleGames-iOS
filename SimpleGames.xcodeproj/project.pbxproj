@@ -18,6 +18,7 @@
 		54AB24B427FA47A100DEFB98 /* TTTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB24B327FA47A100DEFB98 /* TTTViewController.swift */; };
 		54AB24B827FA536E00DEFB98 /* TTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB24B727FA536E00DEFB98 /* TTT.swift */; };
 		54AB24C427FA6F8400DEFB98 /* TTTGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB24C327FA6F8400DEFB98 /* TTTGameViewController.swift */; };
+		54DB0CDF27FAFE4A0055C60B /* TTTModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB0CDE27FAFE4A0055C60B /* TTTModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		54AB24B327FA47A100DEFB98 /* TTTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTViewController.swift; sourceTree = "<group>"; };
 		54AB24B727FA536E00DEFB98 /* TTT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTT.swift; sourceTree = "<group>"; };
 		54AB24C327FA6F8400DEFB98 /* TTTGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTGameViewController.swift; sourceTree = "<group>"; };
+		54DB0CDE27FAFE4A0055C60B /* TTTModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				54AB24B327FA47A100DEFB98 /* TTTViewController.swift */,
 				54AB24B727FA536E00DEFB98 /* TTT.swift */,
 				54AB24C327FA6F8400DEFB98 /* TTTGameViewController.swift */,
+				54DB0CDE27FAFE4A0055C60B /* TTTModel.swift */,
 			);
 			path = TTT;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				54AB24C427FA6F8400DEFB98 /* TTTGameViewController.swift in Sources */,
 				54112ED227FA0EF200222E1F /* RPSViewController.swift in Sources */,
 				549928E627F38BE5007048AD /* SceneDelegate.swift in Sources */,
+				54DB0CDF27FAFE4A0055C60B /* TTTModel.swift in Sources */,
 				54112ED627FA1F1E00222E1F /* GameResult.swift in Sources */,
 				54AB24B427FA47A100DEFB98 /* TTTViewController.swift in Sources */,
 			);

@@ -12,17 +12,13 @@ final class TTTViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "PlayTTTByX" {
             (segue.destination as! TTTGameViewController).setPlayerItem(item: .cellX)
-            print("x")
         } else if segue.identifier == "PlayTTTBy0" {
             (segue.destination as! TTTGameViewController).setPlayerItem(item: .cell0)
-            print("0")
         }
     }
 
